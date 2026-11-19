@@ -1,0 +1,42 @@
+{
+  "raw_train_counts": {
+    "apple": 230,
+    "avocado": 230,
+    "banana": 230,
+    "cherry": 230,
+    "kiwi": 230,
+    "mango": 231,
+    "orange": 230,
+    "pineapple": 230,
+    "strawberry": 230,
+    "watermelon": 230
+  },
+  "raw_test_counts": {
+    "apple": 89,
+    "avocado": 105,
+    "banana": 106,
+    "cherry": 105,
+    "kiwi": 105,
+    "mango": 105,
+    "orange": 97,
+    "pineapple": 105,
+    "strawberry": 103,
+    "watermelon": 105
+  },
+  "raw_predict_count": 48,
+  "deduped_class_counts": {
+    "apple": 275,
+    "avocado": 335,
+    "banana": 335,
+    "cherry": 334,
+    "kiwi": 335,
+    "mango": 331,
+    "orange": 326,
+    "pineapple": 269,
+    "strawberry": 326,
+    "watermelon": 333
+  },
+  "total_valid_unique": 3199,
+  "total_duplicates": 126,
+  "flaw_identified": "Raw Kaggle archive has casing mismatches ('Apple'/'Banana' in train vs 'apple'/'banana' in test) and a spelling typo ('stawberries' in test vs 'strawberries' in train). When unnormalized, naive scripts falsely create 11 or 12 classes or report 0 test samples for 3 categories. Normalizing casing and mapping 'stawberries' -> 'strawberry' correctly restores the genuine 10 balanced fruit categories."
+}

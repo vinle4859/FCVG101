@@ -1,0 +1,27 @@
+# Coursework reports and student submissions
+*.docx
+~$*.docx
+*.pdf
+*.zip
+FINAL_COURSEWORK_REPORT.md
+COURSEWORK_PLAN_AND_REQUIREMENTS.md
+DETAILED_METHODOLOGY_EXPLANATION.md
+
+# Large raw datasets and local drive share folder
+data/fruit10_raw/
+data/splits/
+Task2/data/
+Task2/**/data/
+weights/
+
+# Python and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.DS_Store
+Thumbs.db
+desktop.ini
+*/desktop.ini
